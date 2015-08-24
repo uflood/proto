@@ -1,0 +1,8 @@
+This directory contains a client-side web script for creating evacuation
+zone GeoJSON files from ESRI JSON provided by the City of Boston.
+
+Open converter.html in a modern HTML5 browser and it will convert
+the files included in the 'json' directory into GeoJSON files, which
+you can then download.
+
+N.B. This is hardcoded to specific file names, it is not a generic converter.
