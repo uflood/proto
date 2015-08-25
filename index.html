@@ -6,20 +6,42 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
-        html, body, #map-canvas #directions {
-            height: 100%;
+        html, body, #map-canvas {
+            height: 85%;
             margin: 0px;
-            padding: 0px
+            padding: 0px;
+
         }
+
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
     </style>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script data-main="lib/main" src="lib/require.js"></script>
 
 </head>
 
 <body>
-<div style="width: 100%">
-    <div id="map-canvas" style="width: 66%;"></div>
-    <div id="directions" style="width: 33%;"></div>
+
+<div id="map-canvas"></div>
+
+<div id="wrapper">
+    <div id="directions" style="max-width: 50%; float: left; padding-left: 50px;"></div>
+    <div id="buttons" style="width: 40%; float: right; visibility: hidden;">
+        <h4>Controls: </h4>
+        <ul>
+            <li><a id="alt" href="#">Show an alternate route.</a></li>
+            <li><a id="toggle-routes" href="#">Toggle route overlay.</a></li>
+            <li><a id="toggle-entrypoints" href="#">Toggle entrypoints overlay.</a></li>
+        </ul>
+    </div>
 </div>
 
 </body>
