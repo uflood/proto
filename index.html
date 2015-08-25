@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
-        html, body, #map-canvas {
+        html, body, #map-canvas #directions {
             height: 100%;
             margin: 0px;
             padding: 0px
@@ -17,7 +17,11 @@
 </head>
 
 <body>
-<div id="map-canvas"></div>
+<div style="width: 100%">
+    <div id="map-canvas" style="width: 66%;"></div>
+    <div id="directions" style="width: 33%;"></div>
+</div>
+
 </body>
 
 </html>
